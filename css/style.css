@@ -7,15 +7,63 @@
 /* #endregion RESET  */
 
 /* #region GENERAL */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 /* #endregion GENERAL */
 
 /* #region COMMONS */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.radius-50 {
+  border-radius: 50%;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
 /* #endregion COMMONS */
 
 /* #region VARIABLES */
+:root {
+  --header-bkg: #0084fd;
+  --cards-bkg: #b5ddff;
+  --violet-bkg: #9792e4;
+  --free-txt: #fdc15f;
+  --footer-bkg: #333333;
+
+}
 /* #endregion  VARIABLES */
 
 /* #region HEADER */
+header {
+  background-color: var(--header-bkg);
+  height: 75px;
+  line-height: 75px;
+}
+
+header .container.flex {
+  justify-content: space-between;
+}
+
+#logo-sito {
+  background-color: yellow;
+}
+
+header nav {
+  background-color: yellow;
+}
 /* #endregion HEADER */
 
 /* #region MAIN */
@@ -25,6 +73,25 @@
 /* #endregion FOOTER */
 
 /* #region RESPONSIVE */
+
+/* #region TABLET */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+/* #endregion TABLET */
+
+/* #region MOBILE */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+/* #endregion MOBILE */
+
 /* #endregion RESPONSIVE */
 
 
