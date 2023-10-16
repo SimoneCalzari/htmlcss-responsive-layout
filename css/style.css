@@ -148,8 +148,28 @@ header nav {
 } 
 /* #endregion SECTION 3 */
 
-/* #region SECTION */
-/* #endregion SECTION */
+/* #region SECTION 4 */
+#sect-4 {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: var(--violet-bkg);
+}
+
+#sect-4 h2 {
+  margin-bottom: 30px;
+}
+
+#sect-4 .container.flex {
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+#sect-4 .container.flex > div {
+  width: calc((100% - 50px) / 3);
+  background-color: white;
+  padding: 15px;
+}
+/* #endregion SECTION 4 */
 
 /* #region SECTION */
 /* #endregion SECTION */
@@ -174,14 +194,15 @@ header nav {
   #sect-2 .container.flex {
     width: 95%;
     border: 1px solid black;
-    gap: 50px;
     flex-wrap: wrap;
   }
   
   #sect-2 .container.flex > div {
     width: 100%;
-    line-height: 20px;
-    padding: 15px;
+  }
+
+  #sect-4 .container.flex > div {
+    width: calc((100% - 25px) / 2);
   }
   
 }
@@ -213,7 +234,12 @@ header nav {
   #sect-3 .container .flex div:last-child {
     width: 100%;
   } 
-    
+  
+  
+  #sect-4 .container.flex > div {
+    width: 100%
+  }
+  
 }
 /* #endregion MOBILE */
 
