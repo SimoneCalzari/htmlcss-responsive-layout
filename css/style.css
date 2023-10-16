@@ -200,8 +200,22 @@ header nav {
 
 /* #endregion SECTION 5 */
 
-/* #region SECTION */
-/* #endregion SECTION */
+/* #region SECTION 6 */
+#sect-6 {
+  padding: 50px 0;
+  background-color: var(--violet-bkg);
+}
+
+#sect-6 .container {
+  padding: 0 250px;
+}
+
+#sect-6 .container > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+
+/* #endregion SECTION 6 */
 
 /* #endregion MAIN */
 
@@ -234,6 +248,11 @@ header nav {
   #sect-5 .container.flex {
     padding: 0;
   }
+
+  #sect-6 .container {
+    padding: 0 100px;
+  }
+  
   
 }
 /* #endregion TABLET */
@@ -275,6 +294,10 @@ header nav {
   
   #sect-5 .container.flex > div:last-child {
     width: 100%;
+  }
+
+  #sect-6 .container {
+    padding: 0 50px;
   }
   
 }
