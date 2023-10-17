@@ -17,6 +17,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 img {
@@ -25,6 +26,10 @@ img {
 
 button {
   border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 /* #endregion GENERAL */
 
@@ -69,15 +74,11 @@ header .container.flex {
   justify-content: space-between;
 }
 
-header a{
-  display: inline-block;
-}
-
 #logo-sito a img {
   vertical-align: middle;
 }
 
-nav {
+ header nav {
   align-items: center;
 }
 
@@ -87,16 +88,17 @@ nav ul li a {
   padding: 0 20px;
 }
 
+nav ul li:hover {
+  background-color: var(--header-bkg);
+  filter: brightness(1.4);
+}
+
 nav button {
   background-color: white;
   padding: 10px 15px;
   border-radius: 20px;
   margin-left: 20px;
   font-size: 18px;
-}
-
-nav button:hover {
-  cursor: pointer;;
 }
 
 nav a i {
@@ -119,21 +121,71 @@ nav > a {
   padding-bottom: 100px;
 }
 
-#sect-1 .container.flex {
+#sect-1 .marketing-cards {
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
-#sect-1 .container.flex > div {
-  width: calc((100% - 60px) / 3);
-  height: 350px;
+#sect-1 .marketing-cards .card {
+  width: calc((100% - 50px) / 3);
   background-color: var(--cards-bkg);
-  border: 1px solid black;
+  border-radius: 20px;
+  padding: 30px 30px 0px 30px;
 }
 
-#sect-1 .container.flex > div:first-child {
-  width: calc(calc((100% - 60px) * 2 / 3) + 30px);
+#sect-1 .marketing-cards .card:not(:first-child) i {
+  color: var(--header-bkg);
+  font-size: 80px;
+  margin-bottom: 25px;
 }
+
+#sect-1 .marketing-cards .card h3 {
+  color: var(--header-bkg);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#sect-1 .marketing-cards .card p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#sect-1 .marketing-cards .card:first-child {
+  width: calc(calc((100% - 50px) * 2 / 3) + 25px);
+}
+
+#sect-1 .marketing-cards .card .card-txt {
+  width: 50%;
+}
+
+#sect-1 .marketing-cards .card .card-img {
+  width: 50%;
+  overflow: hidden;
+}
+
+#sect-1 .marketing-cards .card .card-txt button {
+  font-size: 18px;
+  color: white;
+  background-color: var(--header-bkg);
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+#sect-1 .marketing-cards .card .card-txt button i {
+  margin-right: 5px;
+}
+
+#sect-1 .marketing-cards .card .card-img img {
+  position: relative;
+  top: 30px;
+}
+
+
+
+
+
 
 /* #endregion SECTION 1 */
 
@@ -285,12 +337,20 @@ footer .container p:first-child {
     margin: 0 auto;
   }
 
-  nav > ul.flex , nav > button {
+  .only-desktop {
     display: none;
   }
 
-  nav > a {
+  .only-tab-mob {
     display: block;
+  }
+
+  #sect-1 .marketing-cards .card:first-child {
+    flex-wrap: wrap;
+  }
+
+  #sect-1 .marketing-cards .card:first-child > * {
+    width: 100%;
   }
 
   #sect-2 .container.flex {
@@ -329,14 +389,14 @@ footer .container p:first-child {
     margin: 0 auto;
   }
 
-  #sect-1 .container.flex > div {
+  #sect-1 .marketing-cards .card:first-child {
     width: 100%;
   }
-  
-  #sect-1 .container.flex > div:first-child {
+
+  #sect-1 .marketing-cards .card {
     width: 100%;
   }
-  
+
   #sect-3 .container > .flex {
     flex-wrap: wrap;
   }
