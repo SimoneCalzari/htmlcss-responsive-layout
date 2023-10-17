@@ -409,26 +409,69 @@ nav > a {
   padding: 100px 0 150px;
 }
 
-#sect-5 .container.flex {
-  padding: 0 40px;
-  flex-wrap: wrap;
+#sect-5 .about-us {
+  width: 90%;
+  margin: 0 auto;
 }
 
-#sect-5 .container.flex > div:first-child {
+#sect-5 .about-us .about-us-left {
   width: 70%;
-  background-color: aqua;
+  padding-right: 25px;
 }
 
-#sect-5 .container.flex > div:last-child {
+#sect-5 .about-us .about-us-left h2 {
+  font-size: 72px;
+  color: var(--violet-bkg);
+  margin-bottom: 60px;
+}
+
+#sect-5 .about-us .about-us-left p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+#sect-5 .about-us .about-us-left p:first-of-type {
+  margin-bottom: 60px;
+}
+
+#sect-5 .about-us .about-us-right {
   width: 30%;
-  background-color: #fdc15f;
+  padding: 25px;
+  position: relative;
 }
 
-#sect-5 .container.flex > div:first-child > *:not(:last-child) {
-  margin-bottom: 50px;
+#sect-5 .about-us .about-us-right .container-img {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
-#sect-5 .container.flex > div:last-child > *:not(:last-child) {
-  margin-bottom: 30px;
+
+#sect-5 .about-us .about-us-right > i {
+  font-size: 60px;
+  color: var(--violet-bkg);
+  position: absolute;
+  top: 15px;
+  left: 170px;
+}
+
+#sect-5 .about-us .about-us-right p {
+  color: var(--violet-bkg); 
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#sect-5 .about-us .about-us-right button {
+  color: white;
+  background: var(--violet-bkg);
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+#sect-5 .about-us .about-us-right button i {
+  margin-right: 5px;
 }
 
 /* #endregion SECTION 5 */
@@ -511,9 +554,10 @@ footer .container p:first-child {
   #sect-4 .benefits .benefit {
     width: calc((100% - 25px) / 2);
   }
-    
-  #sect-5 .container.flex {
-    padding: 0;
+  
+  
+  #sect-5 .about-us {
+    width: 100%;
   }
 
   #sect-6 .container {
@@ -563,13 +607,26 @@ footer .container p:first-child {
     width: 100%;
   }
 
-  #sect-5 .container.flex > div:first-child {
+  #sect-5 .about-us {
+    flex-wrap: wrap;
+  }
+
+  #sect-5 .about-us .about-us-right {
     width: 100%;
+    padding: 5px;
+  }
+
+  #sect-5 .about-us .about-us-left {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-left: 5px;
+  }
+
+  #sect-5 .about-us .about-us-right > i {
+    top: 0px;
+    left: 150px;
   }
   
-  #sect-5 .container.flex > div:last-child {
-    width: 100%;
-  }
 
   #sect-6 .container {
     padding: 0 50px;
