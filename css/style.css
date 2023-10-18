@@ -478,16 +478,57 @@ nav > a {
 
 /* #region SECTION 6 */
 #sect-6 {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: var(--violet-bkg);
 }
 
-#sect-6 .container {
-  padding: 0 250px;
+#sect-6 h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #d5d4f4;
 }
 
-#sect-6 .container > *:not(:last-child) {
-  margin-bottom: 40px;
+#sect-6 h3 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+#sect-6 h2 {
+  font-size: 96px;
+  margin-bottom: 50px;
+  color: var(--free-txt);
+}
+
+#sect-6 p {
+  margin-bottom: 30px;
+  color: white;
+}
+
+#sect-6 button {
+  background-color: white;
+  color: var(--violet-bkg);
+  padding: 25px 80px;
+  font-size: 18px;
+  border-radius: 40px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+
+}
+
+#sect-6 .copyright > * {
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#sect-6 .copyright i {
+  font-size: 4px;
+  vertical-align: middle;
+}
+
+#sect-6 .copyright a {
+  color: white;
+  text-decoration: underline;
 }
 
 
@@ -497,18 +538,22 @@ nav > a {
 
 /* #region FOOTER */
 footer {
-  padding: 30px 0;
+  padding: 40px 0;
   background-color: var(--footer-bkg);
   color: white;
+  font-size: 14px;
 }
 
-footer .container {
-  padding: 0 300px;
-}
-
-footer .container p:first-child {
+footer .container div:first-child {
   margin-bottom: 60px;
 }
+
+footer .container div:last-child span {
+  color: var(--violet-bkg);
+  text-decoration: underline;
+}
+
+
 /* #endregion FOOTER */
 
 /* #region RESPONSIVE */
@@ -560,14 +605,6 @@ footer .container p:first-child {
     width: 100%;
   }
 
-  #sect-6 .container {
-    padding: 0 100px;
-  }
-
-  footer .container {
-    padding: 0 125px;
-  }
-  
 }
 /* #endregion TABLET */
 
@@ -625,15 +662,6 @@ footer .container p:first-child {
   #sect-5 .about-us .about-us-right > i {
     top: 0px;
     left: 150px;
-  }
-  
-
-  #sect-6 .container {
-    padding: 0 50px;
-  }
-
-  footer .container {
-    padding: 0 50px;
   }
   
 }
